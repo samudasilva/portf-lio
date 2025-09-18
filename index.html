@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./img/logo-icon.png">
+    <title>Samuel Silva | Portfólio</title>
+</head>
+<body>
+
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+    <a>
+        <img src="./img/logo-icon.png" alt="Logo do Samuel Silva" class="logodark">
+        <img src="./img/logo-icon.png" alt="Logo do Samuel Silva LightMode" class="logolight">
+    </a>
+    <ul class="menu">
+        <li><a href="#inicio" class="menu-link">Início</a></li>
+        <li><a href="#sobre" class="menu-link">Sobre</a></li>
+        <li><a href="#projetos" class="menu-link">Projetos</a></li>
+        <li><a href="#contato-final" class="menu-link">Contato</a></li>
+    </ul>
+
+    <div class="seletor-idioma">
+        <button class="idioma-principal" id="idiomaDropdownBtn">
+            <span id="idiomaSelecionado">PT</span> 
+            <img src="./img/bandeira-br.png" alt="Bandeira do Brasil" class="bandeira"> 
+            <span class="seta-dropdown">▼</span>
+        </button>
+
+        <div class="opcoes-idioma" id="opcoesIdioma">
+            <span class="idioma-opcao" data-lang="pt">PT <img src="./img/bandeira-br.png" alt="Bandeira do Brasil" class="bandeira"></span>
+            <span class="idioma-opcao" data-lang="en">EN <img src="./img/bandeira-eua.png" alt="Bandeira dos EUA" class="bandeira"></span>
+        </div>
+
+        <!-- Botão Dark/Light ao lado do idioma -->
+        <button id="toggle-theme-btn" class="toggle-theme-btn">
+            <!-- Ícone do Sol -->
+            <svg id="icone-sol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="20" height="20"
+                fill="currentColor" style="fill:#FFFFFF;">
+                <path
+                    d="M210.2 53.9C217.6 50.8 226 51.7 232.7 56.1L320.5 114.3L408.3 56.1C415 51.7 423.4 50.9 430.8 53.9C438.2 56.9 443.4 63.5 445 71.3L465.9 174.5L569.1 195.4C576.9 197 583.5 202.4 586.5 209.7C589.5 217 588.7 225.5 584.3 232.2L526.1 320L584.3 407.8C588.7 414.5 589.5 422.9 586.5 430.3C583.5 437.7 576.9 443.1 569.1 444.6L465.8 465.4L445 568.7C443.4 576.5 438 583.1 430.7 586.1C423.4 589.1 414.9 588.3 408.2 583.9L320.4 525.7L232.6 583.9C225.9 588.3 217.5 589.1 210.1 586.1C202.7 583.1 197.3 576.5 195.8 568.7L175 465.4L71.7 444.5C63.9 442.9 57.3 437.5 54.3 430.2C51.3 422.9 52.1 414.4 56.5 407.7L114.7 320L56.5 232.2C52.1 225.5 51.3 217.1 54.3 209.7C57.3 202.3 63.9 196.9 71.7 195.4L175 174.6L195.9 71.3C197.5 63.5 202.9 56.9 210.2 53.9zM239.6 320C239.6 275.6 275.6 239.6 320 239.6C364.4 239.6 400.4 275.6 400.4 320C400.4 364.4 364.4 400.4 320 400.4C275.6 400.4 239.6 364.4 239.6 320zM448.4 320C448.4 249.1 390.9 191.6 320 191.6C249.1 191.6 191.6 249.1 191.6 320C191.6 390.9 249.1 448.4 320 448.4C390.9 448.4 448.4 390.9 448.4 320z" />
+            </svg>
+        
+            <!-- Ícone da Lua -->
+            <svg id="icone-lua" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="20" height="20"
+                fill="currentColor" style="display:none;">
+                <path
+                    d="M320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576C388.8 576 451.3 548.8 497.3 504.6C504.6 497.6 506.7 486.7 502.6 477.5C498.5 468.3 488.9 462.6 478.8 463.4C473.9 463.8 469 464 464 464C362.4 464 280 381.6 280 280C280 207.9 321.5 145.4 382.1 115.2C391.2 110.7 396.4 100.9 395.2 90.8C394 80.7 386.6 72.5 376.7 70.3C358.4 66.2 339.4 64 320 64z" />
+            </svg>
+        </button>
+    </div>
+</nav>
+
+
+    <main id="inicio" class="cabecalho">
+            <img src="./img/avatar.png" alt="Avatar do Samuel" class="foto-perfil">
+            <h1>Samuel Silva</h1>
+            <p class="cabecalho-subtitulo">Software Developer</p>
+
+    </main>
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <img src="./img/foto-perfil.jfif" alt="Minha foto de perfil" class="sobre-foto">
+            <p class="sobre-paragrafo" id="paragrafo-sobre">
+            Olá! Meu nome é Samuel. Sou um desenvolvedor de software apaixonado por criar soluções inovadoras e funcionais.
+            Minha paixão é unir design e tecnologia para entregar soluções que não apenas funcionam, mas encantam os usuários.
+            Atualmente, estou expandindo minhas habilidades e aprofundando meus conhecimentos em desenvolvimento Full Stack.
+            Meu objetivo é dominar o ciclo completo de criação de software, construindo aplicações robustas e completas, do back-end ao front-end.
+            Se você procura um profissional com um olhar detalhado para a experiência do usuário e a ambição de construir soluções completas, vamos conversar!
+            </p>
+        </div>
+    </section>
+    
+    <section id="habilidades" class="habilidades">
+        <h2 class="habilidades-titulo">SKILLS</h2>
+        <div class="habilidades-grade">
+    
+            <div class="habilidades-item">
+                <img src="./img/html-icone.png" alt="Ícone do HTML" class="habilidades-icone">
+                <span class="habilidades-tooltip">HTML</span>
+            </div>
+    
+            <div class="habilidades-item">
+                <img src="./img/css-icone.png" alt="Ícone do CSS" class="habilidades-icone">
+                <span class="habilidades-tooltip">CSS</span>
+            </div>
+
+            <div class="habilidades-item">
+                <img src="./img/sass-icon.png" alt="Ícone do SASS" class="habilidades-icone">
+                <span class="habilidades-tooltip">SASS</span>
+            </div>
+
+            <div class="habilidades-item">
+                <img src="./img/bootstrap-icon.png" alt="Ícone do Botstrap" class="habilidades-icone">
+                <span class="habilidades-tooltip">BOOTSTRAP</span>
+            </div>
+
+            <div class="habilidades-item">
+                <img src="./img/figma-icone.png" alt="Ícone do Figma " class="habilidades-icone">
+                <span class="habilidades-tooltip">FIGMA</span>
+            </div>
+
+            <div class="habilidades-item">
+                <img src="./img/c++-icon.png" alt="Ícone do C++ " class="habilidades-icone">
+                <span class="habilidades-tooltip">C++</span>
+            </div>
+
+            <div class="habilidades-item">
+                <img src="./img/csharp-icon.png" alt="Ícone do C# " class="habilidades-icone">
+                <span class="habilidades-tooltip">C#</span>
+            </div>
+
+            <div class="habilidades-item">
+                <img src="./img/python-icon.png" alt="Ícone do Python " class="habilidades-icone">
+                <span class="habilidades-tooltip">PYTHON</span>
+            </div>
+
+            <div class="habilidades-item">
+                <img src="./img/javascript-icon.png" alt="Ícone do Javascript " class="habilidades-icone">
+                <span class="habilidades-tooltip">JAVASCRIPT</span>
+            </div>
+
+            <div class="habilidades-item">
+                <img src="./img/typescript-icon.png" alt="Ícone do Typescript " class="habilidades-icone">
+                <span class="habilidades-tooltip">TYPESCRIPT</span>
+            </div>
+
+            <div class="habilidades-item">
+                <img src="./img/react-icon.png" alt="Ícone do React " class="habilidades-icone">
+                <span class="habilidades-tooltip">REACT</span>
+            </div>
+
+             <div class="habilidades-item">
+                <img src="./img/java-icon.png" alt="Ícone do Java " class="habilidades-icone">
+                <span class="habilidades-tooltip">JAVA</span>
+            </div>
+
+            <div class="habilidades-item">
+                <img src="./img/tailwindcss-icon.png" alt="Ícone do Tailwind " class="habilidades-icone">
+                <span class="habilidades-tooltip">TAILWIND</span>
+            </div>
+
+            <div class="habilidades-item">
+                <img src="./img/mysql-icon.png" alt="Ícone do MySQL " class="habilidades-icone">
+                <span class="habilidades-tooltip">MySQL</span>
+            </div>
+
+            <div class="habilidades-item">
+                <img src="./img/wordpress-icon.png" alt="Ícone do WordPress " class="habilidades-icone">
+                <span class="habilidades-tooltip">WORDPRESS</span>
+            </div>
+
+            <div class="habilidades-item">
+                <img src="./img/elementor-icon.png" alt="Ícone do Elementor " class="habilidades-icone">
+                <span class="habilidades-tooltip">ELEMENTOR</span>
+            </div>
+
+            <div class="habilidades-item">
+                <img src="./img/vscode-icon.png" alt="Ícone do VSCode " class="habilidades-icone">
+                <span class="habilidades-tooltip">VSCODE</span>
+            </div>
+
+            <div class="habilidades-item">
+                <img src="./img/github-icon.png" alt="Ícone do GitHub " class="habilidades-icone">
+                <span class="habilidades-tooltip">GITHUB</span>
+            </div>
+    
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Portfólio</h2>
+        <p class="projetos-subtitulo" id="trabalhos-recentes">Trabalhos mais recentes</p>
+        <div class="projetos-carrossel-container">
+            <button class="botao-carrossel" id="anterior">&#10094;</button>
+            <div class="projetos-caixa" id="projetos-rolagem">
+                
+                <div class="projetos-card" data-projeto-id="projeto-imoveis">
+                    <img src="/img/site-imoveis.png" alt="Projeto 1" class="projetos-imagem">
+                    <div class="caixa-texto-projeto">
+                        <h3 class="info-projetos" id="titulo-projeto-1">Site de Imóveis</h3>
+                        <p class="paragrafo-projetos" id="subtitulo-projeto-1">Trabalho Freelance</p>
+                    </div>
+                </div>
+
+
+                <div class="projetos-card" data-projeto-id="projeto-numero-secreto">
+                    <img src="/img/numero-secreto.png" alt="Projeto 2" class="projetos-imagem">
+                    <div class="caixa-texto-projeto">
+                        <h3 class="info-projetos" id="titulo-projeto-2">Jogo do Número Secreto</h3>
+                        <p class="paragrafo-projetos"  id="subtitulo-projeto-2">Case de Estudo</p>
+                    </div>
+                </div>
+    
+                <div class="projetos-card" data-projeto-id="projeto-ingresso">
+                    <img src="/img/ingresso.png" alt="Projeto 3" class="projetos-imagem">
+                    <div class="caixa-texto-projeto">
+                        <h3 class="info-projetos" id="titulo-projeto-3">Compra de Ingresso</h3>
+                        <p class="paragrafo-projetos" id="subtitulo-projeto-3">Case de Estudo</p>
+                    </div>
+                </div>
+    
+                <div class="projetos-card" data-projeto-id="projeto-amigo-secreto">
+                    <img src="/img/amigo-secreto.png" alt="Projeto 4" class="projetos-imagem">
+                    <div class="caixa-texto-projeto">
+                        <h3 class="info-projetos" id="titulo-projeto-4">Amigo Secreto</h3>
+                        <p class="paragrafo-projetos" id="subtitulo-projeto-4">Case de Estudo</p>
+                    </div>
+                </div>
+
+                <div class="projetos-card" data-projeto-id="projeto-carrinho-compras">
+                    <img src="/img/carrinho-compras.png" alt="Projeto 5" class="projetos-imagem">
+                    <div class="caixa-texto-projeto">
+                        <h3 class="info-projetos"  id="titulo-projeto-5">Carrinho de Compras</h3>
+                        <p class="paragrafo-projetos" id="subtitulo-projeto-5">Case de Estudo</p>
+                    </div>
+                </div>
+    
+            </div>
+            <button class="botao-carrossel" id="proximo">&#10095;</button>
+        </div>
+
+        <div class="indicadores-carrossel" id="indicadores-carrossel">
+        </div>
+
+    </section>
+
+    <section id="contato-final" class="contato-final">
+    <div class="contato-conteudo">
+        <h2 class="contato-titulo-final" id="titulo-final">Let's make magic happen!</h2>
+        <p class="contato-paragrafo-final" id="paragrafo-final">
+            From initial concept to final product, I strive for excellence in every project. Let's make something great together. Hit me up and let's kick off your project now!
+        </p>
+        <a href="https://wa.me/5511942075707?text=Olá,%20Samuel!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." class="botao-contato-final" id="botao-final">
+            GET IN TOUCH
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg>
+        </a>
+        <div class="contato-social">
+            <a href="https://www.linkedin.com/in/shimusilva/" aria-label="LinkedIn">
+               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 24 24">
+                <path d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M9,17H6.477v-7H9 V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977 C13.93,10.407,14.581,10,15.802,10C17.023,10,18,10.977,18,13.174V17z"></path>
+            </svg>
+            </a>
+            <a href="https://github.com/samudasilva" aria-label="GitHub">
+               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 30 30">
+                    <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+               </svg>
+            </a>
+            <a href="https://www.instagram.com/shimusilva/" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 24 24">
+                    <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path>        
+                </svg>
+            </a>    
+        </div>
+    </div>
+
+</section>
+
+<section class="footer">
+        <div class="footer-container">
+            <div class="footer-copyright" id="footer-copyright">
+                <p>&copy; Copyright 2025. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-signature">
+                <img src="./img/logo-icon.png" alt="Samuel Silva Logo" class="footer-logodark">
+                <img src="./img/logo-icon.png" alt="Samuel Silva Logo" class="footer-logolight">
+                <span id="footer-signature-text">Idealizado e criado por Samuel Silva.</span>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-projeto" class="modal">
+    <div class="modal-conteudo">
+        <span class="fechar">&times;</span>
+        <div class="modal-header">
+            <h3 id="modal-titulo"></h3>
+        </div>
+        <div class="modal-body">
+            <div id="modal-imagens"></div>
+            <p id="modal-descricao"></p>
+            <div class="modal-links">
+                <a href="#" id="modal-link-github" target="_blank">
+                    <img src="./img/github-icon.png" alt="Link para o GitHub" class="icon-link">
+                    <span>GitHub</span>
+                </a>
+                <a href="3" id="modal-link-live" target="_blank">
+                    <img src="img/icon-site.png" alt="Live Preview" class="icon-link">
+                    <span>Live Preview</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="lightbox-imagem" class="lightbox">
+        <span class="fechar-lightbox">&times;</span>
+        <img class="lightbox-conteudo" id="imagem-expandida">
+    </div>
+    
+</div>
+
+
+
+    <script src="port.js"></script>
+
+</body>
+
+</html>

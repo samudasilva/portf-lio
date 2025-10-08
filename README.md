@@ -17,5 +17,7 @@
 * Navegador
 * Link do Vercel
 
-<img width="1899" height="909" alt="image" src="https://github.com/user-attachments/assets/9e11f15f-4d79-4fb8-8f04-5fde7f9f2852" />
+<img width="1870" height="903" alt="Captura de tela 2025-10-08 174858" src="https://github.com/user-attachments/assets/669f5302-a74a-4adb-8028-f19cfac27428" />
+
+
 

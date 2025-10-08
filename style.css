@@ -98,7 +98,7 @@ body.light-mode .logodark {
 }
 
 .menu{
-    display: flex;
+    display: flex; /* <-- MANTIDO: Garante que o menu desktop seja visível */
     margin: auto;
     list-style: none;
     gap: 3rem;
@@ -138,15 +138,15 @@ body.light-mode .logodark {
 
 .seletor-idioma {
     position: relative;
-    display: flex;         
-    align-items: center;   
-    gap: 0.8rem;           
+    display: flex; 		 
+    align-items: center; 	 
+    gap: 0.8rem; 			 
 }
 
 
 .toggle-theme-btn {
-    padding: 0.6rem;       
-    border-radius: 200%;    
+    padding: 0.6rem; 		 
+    border-radius: 200%; 	 
     border: 1px solid var(--vidro);
     background-color: var(--maisescuro);
     transition: background 0.3s ease, border-color 0.3s ease;
@@ -258,12 +258,12 @@ body.light-mode .logodark {
 }
 
 .foto-perfil{
-     width: 250px;
-     height: 250px;
-     box-shadow: 0 0 20px rgba(79,70,229,0.3);
-     border-radius: 100%;
-     border: 4px solid var(--vidro);
-     animation: flutuando 5s ease-in-out infinite;
+      width: 250px;
+      height: 250px;
+      box-shadow: 0 0 20px rgba(79,70,229,0.3);
+      border-radius: 100%;
+      border: 4px solid var(--vidro);
+      animation: flutuando 5s ease-in-out infinite;
 }
 
 h1{
@@ -302,7 +302,7 @@ h1{
     background: rgba(255, 255, 255, 0.05);
     line-height: 2.0;
     font-family: "Roboto Condensed", sans-serif;font-family: "Roboto Condensed", sans-serif;
-     transition: background 0.5s ease, border-color 0.5s ease;
+      transition: background 0.5s ease, border-color 0.5s ease;
 }
 
 .light-mode .sobre-caixa{
@@ -978,4 +978,152 @@ body.light-mode .footer-logolight {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* --- Media Query para Dispositivos Móveis (max-width: 768px) --- */
+@media (max-width: 768px) {
+    /* 1. Ajuste do Container da Navegação */
+    .navegacao {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+    }
+
+    /* 2. Oculta o Menu Padrão e o Altera para ser Vertical */
+    .menu {
+        display: none; /* Esconde a lista de links por padrão no mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 80px; 
+        left: 0;
+        width: 100%;
+        background: var(--maisescuro); 
+        padding: 1rem 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Quando o JavaScript adicionar a classe .menu-aberto */
+    .menu.menu-aberto {
+        display: flex; /* Exibe o menu verticalmente quando ativado */
+    }
+
+    .menu-link {
+        padding: 1rem 1.5rem; 
+        text-align: center;
+    }
+    
+    /* 3. Adaptação dos Seletores (idioma e tema) - Manter visíveis no mobile */
+    .seletor-idioma {
+        /* Garante que fiquem visíveis no topo */
+    }
+
+    /* 4. Títulos menores no cabeçalho */
+    h1 {
+        font-size: 2.5rem; 
+    }
+
+    .cabecalho-subtitulo {
+        font-size: 1.2rem; 
+        text-align: center;
+    }
+
+    /* 5. MOSTRAR O BOTÃO DE HAMBÚRGUER AQUI */
+    .menu-hamburguer {
+        display: block; /* Garante que o botão apareça no mobile */
+        z-index: 101; 
+        position: relative; 
+    }
+}
+
+@media (max-width: 768px) {
+    /* ... seu código anterior ... */
+
+    .sobre {
+        padding: 4rem 1rem; 
+    }
+
+    .sobre-titulo {
+        font-size: 2rem;
+    }
+
+    .sobre-caixa {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        gap: 1.5rem; 
+    }
+
+    .sobre-foto {
+        margin: 0 auto;
+    }
+    
+    .sobre-paragrafo {
+        font-size: 1rem; 
+        text-align: justify; 
+    }
+}
+
+@media (max-width: 480px) { 
+    .contato-titulo-final {
+        font-size: 2rem; 
+    }
+
+    .contato-paragrafo-final {
+        font-size: 0.9rem; 
+    }
+    
+    .botao-contato-final {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .contato-social {
+        gap: 1rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    /* ... seu código anterior ... */
+    
+    .projetos {
+        padding: 4rem 0; 
+    }
+
+    .projetos-caixa {
+        padding: 2rem 1rem;
+    }
+
+    .projetos-titulo {
+        font-size: 2rem;
+        padding: 0 1rem; 
+    }
+
+    .botao-carrossel {
+        width: 40px; 
+        height: 40px;
+        font-size: 1.5rem; 
+    }
+
+    #anterior {
+        left: 0; 
+    }
+    
+    #proximo {
+        right: 0; 
+    }
+}
+
+/* CSS para o botão Hambúrguer - Estilos base */
+.menu-hamburguer {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--claro); /* Cor do ícone */
+}
+
+/* NOVO BLOCO: Garante que o botão de hambúrguer esteja ESCONDIDO no desktop */
+@media (min-width: 769px) {
+    .menu-hamburguer {
+        display: none;
+    }
 }

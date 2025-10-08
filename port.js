@@ -475,3 +475,28 @@ window.addEventListener('click', (evento) => {
         body.style.overflow = '';
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Seleciona os elementos que vamos usar
+    const menuHamburguer = document.querySelector('.menu-hamburguer');
+    const menu = document.querySelector('.menu');
+
+    // 2. Adiciona um "ouvinte de evento" (event listener) ao botão
+    menuHamburguer.addEventListener('click', () => {
+        // 3. Alterna a classe 'aberto' no elemento .menu
+        // Se a classe existe, remove. Se não existe, adiciona.
+        menu.classList.toggle('aberto');
+    });
+
+    // 4. (OPCIONAL) Fechar o menu ao clicar em um link (navegação)
+    const menuLinks = document.querySelectorAll('.menu-link');
+    
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // Remove a classe 'aberto' ao clicar em um link, se estiver visível
+            if (menu.classList.contains('aberto')) {
+                menu.classList.remove('aberto');
+            }
+        });
+    });
+});

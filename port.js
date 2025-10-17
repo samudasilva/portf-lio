@@ -295,7 +295,7 @@ const dadosProjetos = {
                 'img/numero-foto3.png',
                 'img/numero-foto4.png'
             ],
-            linkGithub: 'https://github.com/samudasilva/jogo-numero-secreto',
+            linkGithub: 'https://github.com/samudasilva/jogo-numero-secretohttps://github.com/samudasilva/Projeto-Numero-Secreto.git',
             linkLive: 'https://seusiteaqui.com.br'
         },
         en: {
@@ -308,7 +308,7 @@ const dadosProjetos = {
                 'img/numero-foto4.png'
 
             ],
-            linkGithub: 'https://github.com/samudasilva/jogo-numero-secreto',
+            linkGithub: 'https://github.com/samudasilva/jogo-numero-secretohttps://github.com/samudasilva/Projeto-Numero-Secreto.git',
             linkLive: 'https://seusiteaqui.com.br'
         }
     },
@@ -323,7 +323,7 @@ const dadosProjetos = {
                 'img/ingresso-foto3.png',
                 'img/ingresso-foto4.png'
             ],
-            linkGithub: 'https://github.com/samudasilva/ingressos-compra',
+            linkGithub: 'https://github.com/samudasilva/ingressos-comprahttps://github.com/samudasilva/Projeto-Ingresso.git',
             linkLive: 'https://seusiteaqui.com.br'
         },
         en: {
@@ -336,7 +336,7 @@ const dadosProjetos = {
                 'img/ingresso-foto3.png',
                 'img/ingresso-foto4.png'
             ],
-            linkGithub: 'https://github.com/samudasilva/ingressos-compra',
+            linkGithub: 'https://github.com/samudasilva/ingressos-comprahttps://github.com/samudasilva/Projeto-Ingresso.git',
             linkLive: 'https://seusiteaqui.com.br'
         }
     },
@@ -350,7 +350,7 @@ const dadosProjetos = {
                 'img/amigo-foto2.png',
                 'img/amigo-foto3.png',
             ],
-            linkGithub: 'https://github.com/samudasilva/sorteador-amigo-secreto',
+            linkGithub: 'https://github.com/samudasilva/sorteador-amigo-secretohttps://github.com/samudasilva/Projeto-Amigo-Secreto.git',
             linkLive: 'https://seusiteaqui.com.br'
         },
         en: {
@@ -362,7 +362,7 @@ const dadosProjetos = {
                 'img/amigo-foto2.png',
                 'img/amigo-foto3.png',
             ],
-            linkGithub: 'https://github.com/samudasilva/sorteador-amigo-secreto',
+            linkGithub: 'https://github.com/samudasilva/sorteador-amigo-secretohttps://github.com/samudasilva/Projeto-Amigo-Secreto.git',
             linkLive: 'https://seusiteaqui.com.br'
         }
     },
@@ -377,7 +377,7 @@ const dadosProjetos = {
                 'img/carrinho-foto3.png',
                 'img/carrinho-foto4.png'
             ],
-            linkGithub: 'https://github.com/samudasilva/carrinho-compras',
+            linkGithub: 'https://github.com/samudasilva/carrinho-comprashttps://github.com/samudasilva/Projeto-Carrinho-de-Compras.git',
             linkLive: 'https://seusiteaqui.com.br'
         },
         en: {
@@ -390,7 +390,7 @@ const dadosProjetos = {
                 'img/carrinho-foto3.png',
                 'img/carrinho-foto4.png'
             ],
-            linkGithub: 'https://github.com/samudasilva/carrinho-compras',
+            linkGithub: 'https://github.com/samudasilva/carrinho-comprashttps://github.com/samudasilva/Projeto-Carrinho-de-Compras.git',
             linkLive: 'https://seusiteaqui.com.br'
         }
     }
